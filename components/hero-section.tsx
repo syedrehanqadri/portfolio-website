@@ -67,30 +67,30 @@ export function HeroSection() {
         >
           {tagline}
         </motion.p>
-        <motion.div variants={itemVariants} className="flex justify-center space-x-4">
+        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-center gap-4">
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link href="#projects">
-              <Button size="lg" className="px-8 py-3 text-lg">
+              <Button size="lg" className="px-8 py-3 text-lg w-full sm:w-auto">
                 View Projects
               </Button>
             </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link href="#contact">
-              <Button size="lg" variant="outline" className="px-8 py-3 text-lg bg-transparent">
+              <Button size="lg" variant="outline" className="px-8 py-3 text-lg bg-transparent w-full sm:w-auto">
                 Contact Me
               </Button>
             </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <a href="/Rihan_cv.pdf" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="px-8 py-3 text-lg">
+              <Button size="lg" className="px-8 py-3 text-lg w-full sm:w-auto">
                 Download Resume
               </Button>
             </a>
           </motion.div>
         </motion.div>
-        <motion.div variants={itemVariants} className="flex justify-center space-x-6 mt-8">
+        <motion.div variants={itemVariants} className="flex justify-center gap-6 mt-8">
           <motion.a
             href="https://github.com/syedrehanqadri"
             target="_blank"

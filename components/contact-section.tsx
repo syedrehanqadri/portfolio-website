@@ -155,7 +155,7 @@ export function ContactSection() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6 p-8 rounded-lg shadow-lg bg-card">
+            <form onSubmit={handleSubmit} className="space-y-8 p-8 sm:p-8 rounded-lg shadow-lg bg-card">
               <div>
                 <Label htmlFor="name" className="sr-only">
                   {"Name"}
@@ -184,7 +184,7 @@ export function ContactSection() {
                   onChange={handleChange}
                   className="w-full bg-input text-foreground border-border focus:border-primary"
                 />
-                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}\
+                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
               </div>
               <div>
                 <Label htmlFor="message" className="sr-only">
